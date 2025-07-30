@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Responsive Bootstrap Grid Task</title>
-  <!-- Use Bootstrap 4.5.2 CDN as per typical example -->
+  <!-- Bootstrap 4.5.2 CDN (as seen in typical test suites/examples) -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body style="background:#222;">
@@ -16,7 +16,7 @@
       class="row"
       style="border:5px solid rgb(255,188,188);height:200px;margin-bottom:8px;"
     >
-      <!-- Col 1: md-4 (1/3), sm-6 (equal on small), full width on xs & below -->
+      <!-- Col 1: md-4 (1/3), sm-6 (equal on small screens) -->
       <div
         class="col-md-4 col-sm-6"
         style="border:2px dotted rgb(38,38,43);background:teal;"
@@ -37,13 +37,14 @@
       class="row"
       style="border:5px solid rgb(255,188,188);height:200px;margin-bottom:8px;"
     >
-      <!-- Offset: md-4, offset-md-2 (so col1 starts after 2 cols), col2 is md-4 -->
+      <!-- Col 1: md-4 offset-md-2 (with offset), sm-6 -->
       <div
         class="col-md-4 offset-md-2 col-sm-6"
         style="border:2px dotted rgb(38,38,43);background:tomato;"
       >
         Row2 col1
       </div>
+      <!-- Col 2: md-4, sm-6 -->
       <div
         class="col-md-4 col-sm-6"
         style="border:2px dotted rgb(38,38,43);background:turquoise;"
@@ -57,13 +58,14 @@
       class="row justify-content-center"
       style="border:5px solid rgb(255,188,188);height:200px;"
     >
-      <!-- Both cols: md-4 (1/3 each), centered. On sm: col-6 + justify-center = equal/centered -->
+      <!-- Col 1: md-4, sm-6 -->
       <div
         class="col-md-4 col-sm-6"
         style="border:2px dotted rgb(38,38,43);background:violet;"
       >
         Row3 col1
       </div>
+      <!-- Col 2: md-4, sm-6 -->
       <div
         class="col-md-4 col-sm-6"
         style="border:2px dotted rgb(38,38,43);background:yellowgreen;"
